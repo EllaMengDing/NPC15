@@ -1,0 +1,199 @@
+html, body{
+
+    scroll-behavior: smooth;
+}
+
+.title{
+	margin-top: 20px;
+	padding: 10px;
+
+}
+
+.image{
+	padding-top: 40px;
+}
+
+.listfix{
+	padding-bottom: 0px;
+}
+
+.textfix{
+	padding-top: 10px;
+}
+
+.topfix{
+	margin-top: 32px;
+}
+.totalfix{
+  padding-top: 18px;
+}
+
+.firsthr{
+	border: none;
+    height: 3px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+.containertop{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.buttonstyle{
+	width: 100%;
+}
+.initialchoose{
+    color: #3f8928;
+}
+.initialzero{
+    color: red;
+}
+.fortotal{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.fixheight{
+	margin-top: 100px;
+	margin-bottom: 100px; 
+}
+
+.hidden{
+	display: none;
+}
+
+.leftfix{
+
+	padding-left: 5px;
+	/*margin-left: 0px;*/
+}
+
+.highlightcolor{
+	background-color: #f1f2f4;
+}
+
+
+.floatlayerhidden{           
+    display:none;                
+} 
+
+.floatlayer{ 
+        border-top: 1px solid #6D7487;
+        background: #f1f2f4;
+        height: 32%;
+        position:fixed;
+        bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-right: 0px;
+        padding: 0px;
+        z-index: 1;
+        max-width:100%; 
+            
+} 
+.floattext{
+    background: #f1f2f4;
+}
+
+.floatsub{
+    background: #f1f2f4;
+    margin-left: -15px;
+    margin-right: -15px; 
+    margin-top: 0px;
+    padding-top: 0px; 
+}
+
+.floatlayertop{ 
+        
+        height: 32%;
+        position:fixed;
+        top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-right: 0px;
+        padding: 0px;
+        z-index: 1;
+        max-width:110%;             
+} 
+.closeicon{
+    font-size: 25px; 
+    color: #000000;
+}
+
+.help{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    
+}
+.helptitle{
+    margin-left: 2rem; 
+    font-size: 20px;
+}
+
+label{
+    margin-left: 1rem;
+}
+
+.personalized{
+  margin-left: -1rem;
+}
+.helptext{
+    height: 200px;
+    overflow: scroll;
+}
+
+
+@media (max-width: 990px){
+.modifyposition{
+    margin-left: -15px;
+} 
+#mealoptions{
+    margin-left: 5px;
+}
+#forMaintenance{
+    margin-left: -5px;
+}
+#forutility{
+    margin-left: -5px;
+}
+
+.helptitle{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 0px;
+
+}
+
+.helptext{
+    top: 10px;
+    overflow: auto;
+}
+.personalized2{
+    margin-left: -1rem;
+  }
+
+.floatlayer{        
+     height: 50%;                    
+} 
+.floattext{
+    height: 40%; 
+
+}
+video{
+     width: 105%;    
+}
+
+.help{
+    margin-top: 0;
+    margin-left: 0;
+    size: 12px;
+}
+
+}
+
+
+
+

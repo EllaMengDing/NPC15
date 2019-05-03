@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/cost.css">
+    <title>15Cost of FHSU 2019-2020</title>
+  </head>  
+  <body>
+    <div class="container ">
+ <!--------------------------------for head------------------------------------>
+        <div class="row">
+            <div class="col-sm image">
+                 <img src="images/fhsulogo2.png" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-sm">
+                 <ul class="list-group list-group-flush text-center ">
+                    <li class="list-group-item  listfix"><h5>Financial Assistance Office</h5></li>
+                    <li class="list-group-item border-0 listfix">Tel : (785) 628-4408 </li>
+                    <li class="list-group-item border-0 listfix">Tel : (800) 628-FHSU</li>
+                    <li class="list-group-item border-0 listfix">Fax : (785) 628-4014</li>
+                 </ul>
+            </div>
+            <div class="col-sm">
+                 <ul class="list-group list-group-flush text-center">
+                    <li class="list-group-item  listfix"><h5>Address</h5></li>
+                    <li class="list-group-item border-0 listfix">Picken Hall 202</li>
+                    <li class="list-group-item border-0 listfix">600 Park Street</li>
+                    <li class="list-group-item border-0 listfix">Hays, KS 67601</li>
+                 </ul>
+            </div>
+        </div>
+            
+        <div class="mx-auto text-center title" >
+              <h1></span>2019-2020 One-Year Cost of Attendance Worksheet</h1>
+        </div>
+    </div>  
+    <hr class="text-center firsthr" width=83% >  
+    <div class="container">
+        <p>Perhaps the most commonly overlooked and one of the most important steps in preparing for college is formulating a budget or estimating your Cost of Attendance. Preparing a realistic budget and adhering to it will not only help you manage college costs, but will also give you peace of mind as to where you stand financially. Historically, one of the major reasons students leave college is due to lack of or inadequate financial planning and budgeting.</p>
+     </div>   
+     <div class="container" id="tuitionposition">
+        <h5 class="font-italic" >This worksheet will help you build a budget to guide you through the nine-month academic year.</h5>
+    </div>   
+<!-----------------------------for all subtotal------------------------------->
+
+<!-----------------------------for tuition and fee----------------------------->
+
+      <div class="container border-top " id="tuitionandfee">
+          <div class="form-row containertop ">
+              <div class="col-lg-2">
+                <h5>Tuition and Fees</h5>
+                <a href="#tuitionposition"><button class="fas fa-question btn btn-warning btn-sm" id="questiontuition"></button></a>
+
+              </div>
+              <div class="col-lg-10">
+                <div class="form-row">
+                    <div class="col-lg-3">
+                      <label>Credit (Fall Term)</label>
+                      <input type="text" class="form-control"  id="fallcredit">
+                    </div>
+                    <div class="col-lg-4">
+                      <label>Course Category</label>
+                       <select class="custom-select mr-sm-2" id="fallcourse">
+                        <option value="0" selected></option>
+                        <option value="172" coursename = "Undergraduate Resident course" state="inState">Undergraduate Resident Course</option>
+                        <option value="508" coursename = "Undergraduate Non-resident course" state="outOfState">Undergraduate Non-Resident Course</option>
+                        <option value="240" coursename = "Undergraduate Contiguous State & MSEP course" state="inState">Undergraduate Contiguous State & MSEP Course</option>
+                        <option value="220" coursename = "Undergraduate Virtual College course" state="inState">Undergraduate Virtual College Course</option>
+                        <option value="240" coursename = "Graduate Resident course" state="inState">Graduate Resident Course</option>           
+                        <option value="605" coursename = "Graduate Non-resident course" state="outOfState">Graduate Non-Resident Course</option> 
+                        <option value="420" coursename = "Graduate MBA course" state="inState">Graduate MBA course</option>
+                        <option value="290" coursename = "Graduate Virtual College course" state="inState">Graduate Virtual College Course</option>
+                        <option value="420" coursename = "Doctorate of Nursing course" state="inState">Doctorate of Nursing Course</option>
+                      </select>                     
+                    </div>
+
+                    <div class="col-lg-2 ">
+                        <button type="button" class="btn btn-success btn-block topfix" id="falladd" >Add</button>
+                    </div>
+
+                    <div class="col-lg-3 topfix text-right initialzero" id="forfall">
+                         <h5 class="calculate totalfix">Fall Term: $<span id="fallsubtotal">0</span></h5>
+                    </div>
+
+                </div>
+                <div>
+                  <ul id = "falllist" class="text-success">
+                       
+                  </ul>
+                </div>
+             </div>
+          </div>
+          <div class="form-row">
+              <div class="col-lg-2">
+                <h5></h5>
+              </div>
+              <div class="col-lg-10">
+                <div class="form-row">
+                    <div class="col-lg-3">
+                      <label>Credit (Spring Term)</label>
+                       <input type="text" class="form-control"  id="springcredit">
+                    </div>
+                    <div class="col-lg-4">
+                      <label>Course Category</label>
+                       <select class="custom-select mr-sm-2" id="springcourse">
+                        <option value="0" selected></option>
+                        <option value="172" coursename = "Undergraduate Resident course" state="inState">Undergraduate Resident Course</option>
+                        <option value="508" coursename = "Undergraduate Non-resident course" state="outOfState">Undergraduate Non-Resident Course</option>
+                        <option value="240" coursename = "Undergraduate Contiguous State & MSEP course" state="inState">Undergraduate Contiguous State & MSEP Course</option>
+                        <option value="220" coursename = "Undergraduate Virtual College course" state="inState">Undergraduate Virtual College Course</option>
+                        <option value="240" coursename = "Graduate Resident course" state="inState">Graduate Resident Course</option>                  
+                        <option value="605" coursename = "Graduate Non-resident course" state="outOfState">Graduate Non-Resident Course</option>
+                        <option value="420" coursename = "Graduate MBA course" state="inState">Graduate MBA course</option>
+                        <option value="290" coursename = "Graduate Virtual College course" state="inState">Graduate Virtual College Course</option>
+                        <option value="420" coursename = "Doctorate of Nursing course" state="inState">Doctorate of Nursing Course</option>   
+                      </select>           
+                    </div>
+                    <div class="col-lg-2">
+                        <button type="button" class="btn btn-success btn-block topfix" id="springadd">Add</button>
+                    </div>
+                    <div class="col-lg-3 topfix text-right initialzero" id="forspring" >
+                     <h5 class="calculate totalfix">Spring Term: $<span id="springsubtotal">0</span></h5>
+                    </div>
+                </div>
+                <div>
+                    <ul id = "springlist"  class="text-success">                     
+                    </ul>
+                </div>
+              </div>
+              
+          </div>
+          <div class="row">
+              <div class="col-lg-2">
+                <h5></h5>
+              </div>
+              <div class="col-lg-10 text-right initialzero" id="fortuition">
+                <h5 class="calculate totalfix" ">Subtotal : $<span id="tuitionsubtotal">0</span></h5>
+              </div>            
+         </div>
+    </div>
+
+        <div class="floatlayerhidden floatlayer container row" id="tuitionandfeefloat" >   
+        <div class="col-sm-8 floattext" >
+          <span class="closeicon" href="#" id="tuitionclose">
+               <i class="fas fa-igloo far fa-times-circle  text-danger" ></i>
+               <span class="helptitle"><strong>Tuition</strong></span>
+          </span>      
+            <div class="col-sm-12 floattext helptext" >      
+          <p class="help"><strong>Students pay tuition and fees for all hours in which they are enrolled.</strong>Tuition and fees charged are based on two factors: the type of course (On-campus or Virtual College) and the student's residency status. See <a href="https://www.fhsu.edu/registrar/in-state-tuition/">in-state tuition requirements</a> for more information.
+          <br><br>
+            Graduate tuition and fees are assessed based on course enrollment level rather than individual classification. Students will pay graduate tuition and fees for graduate credit courses and undergraduate tuition and fees for undergraduate credit courses. Graduate students enrolled in off-campus MBA classes will pay graduate MBA tuition. Graduate students enrolled in DNP classes will pay graduate DNP tuition.
+            Special fees may be added to select approved courses, including noncredit courses, workshops, conferences, and seminars based on direct and indirect operating costs.
+          </p>     
+            </div>
+       </div>
+       
+        <div class="col-sm-4 floatsub" >
+           <video width="110%" height="100%" controls id="video">
+             <source src="images/movie.mp4" type="video/mp4">
+           </video>
+        </div>
+      </div>     
+
+ <!---------------------------for Housing--------------------------------->
+     <div class="container border-top" id="housing">
+           <div class="row containertop ">
+              <div class="col-lg-2">
+              	 	<h5>Housing</h5>
+              	 	<a href="#fortuition"><button class="fas fa-question btn btn-warning btn-sm" id="questionhousing" ></button></a>
+              </div>
+              <div class="col-lg-10">
+				   
+              	 <div class="form-row">	
+                   <div class="col-lg-8">
+	                    <select class="custom-select" id="housingoptions" style="margin-left: -5px;">
+	                        <option value="0" selected>Choose housing</option>
+	                        <option value="3796" name = "McMindes">McMindes: Single room</option>
+	                        <option value="4406" name = "McMindes">McMindes: Double room</option>
+	                        <option value="4096" name = "Victor E. Village">Victor E. Village: Single room</option>
+	                        <option value="4706" name = "Victor E. Village">Victor E. Village: Double room</option>
+	                        <option value="4915" name = "Tiger Place Suites">Tiger Place Suites(Agnew and Heather Halls)</option>
+	                        <option value="5922" name = "Stadium Place">Stadium Place(Furnished Apartments): Two-Bedroom</option>
+	                        <option value="5375" name = "Stadium Place">Stadium Place(Furnished Apartments): Four-Bedroom</option>
+	                        <option value="5461" name = "Wooster Place">Wooster Place(Unfurnished Apartments): One-Bedroom</option>
+	                        <option value="5922" name = "Wooster Place">Wooster Place(Unfurnished Apartments): Two-Bedroom</option>
+	                        <option value="4828" name = "Wooster Place">Wooster Place(Unfurnished Apartments): Two-Bedroom Shared</option>
+                          <option value="" name = "Off-Campus">Off-Campus</option>
+	                    </select>                  
+                    </div>
+
+                    <div class="col-lg-4 text-right initialzero" id="forhousingup">  
+                      <div id="forhousing"> 
+						            <h5 class="calculate" style="padding-top: 18px" >Subtotal : $<span id="housingsubtotal">0</span></h5>
+                      </div>
+                    </div>
+                 </div>  
+                 <div class="form-row" id="offcampus">                  
+                 </div>        
+              </div>
+           </div>       
+        </div>
+
+      <div class="floatlayerhidden floatlayer container row" id="housingfloat" >   
+          <div class="col-sm-8 floattext" >
+            <span class="closeicon" href="#" id="housingclose">
+                 <i class="fas fa-igloo far fa-times-circle  text-danger" ></i>
+                 <span class="helptitle"><strong>Housing</strong></span>
+            </span>      
+              <div class="col-sm-12 floattext helptext" >      
+            <p class="help">At Fort Hays State University, we strive to provide an inclusive, inspiring environment that makes way for excellence in your education – and your life. One of the best ways of immersing yourself in this community of strength and comradery is to take the opportunity to live on campus, with the world of Fort Hays State right outside your door.
+              <br>
+              Housing contracts open in November for the Fall 2019 - Spring 2020 school year.</p>     
+              </div>
+         </div>
+          
+          <div class="col-sm-4 floatsub" >
+             <video width="110%" height="100%" controls >
+               <source src="images/movie.mp4" type="video/mp4">
+             </video>
+          </div>
+        </div>      
+<!--------------------------for Meals------------------------------------------>
+        <div class="container border-top ">
+           <div class="row containertop ">
+              <div class="col-lg-2">
+              		<h5>Meals</h5>
+                   <a href="#forhousing"><button class="fas fa-question btn btn-warning btn-sm" id="questionmeals" ></button></a>
+              </div>
+              <div class="col-lg-10">      	  
+              	<div class="form-row ">     
+              	  <div class="col-lg-3" id="mealoptions">
+                    <label>Meal Plan </label>               
+			               <select class="custom-select mr-sm-6"  style="margin-left: -5px;">
+  			                  <option value="0" name = "No meal plan" selected>No meal plan</option>
+  			                  <option value="4057" name = "Open Access meal plan">Open Access</option>
+  			                  <option value="3877" name = "10 Meals/week meal plan">10 Meals/week</option>
+  			                  <option value="3819" name = "7 Meals/week meal plan">7 Meals/week</option>         
+			              </select> 
+			           </div>
+			             
+    			       <div class="col-lg-3 ">
+    			             <label>Groceries</label>
+    			             <input type="text" class="form-control" id="groceries">
+    			       </div>
+    			             
+    			       <div class="col-lg-3">
+    			             <label>Eating Out</label>
+    			             <input type="text" class="form-control" id="eatingout">
+    			       </div>
+
+                 <div class="col-lg-3 text-right initialzero " id="formeal" style="padding-top: 48px;">
+                  <h5 >Subtotal : $<span id="mealsubtotal">0</span></h5>
+                  
+                 </div>
+			         </div> 	   
+            </div>
+       </div>   
+     </div>
+
+      <div class="floatlayerhidden floatlayer container row" id="mealsfloat" >   
+        <div class="col-sm-8 floattext" >
+          <span class="closeicon" href="#" id="mealsclose">
+               <i class="fas fa-igloo far fa-times-circle  text-danger" ></i>
+               <span class="helptitle" ><strong>Meals</strong></span>
+          </span>      
+          <div class="col-sm-12 floattext helptext" >      
+            <p class="help">Residential Life provides a variety of options designed to fit your schedule and lifestyle. All students within two years of highschool living on campus are required to have a meal plan, and FlexiCash is great for students who want an occasional meal or snack.  Learn more below:
+              <ul>
+                <li><a href="https://www.dineoncampus.com/forthays/for-residents">Plan Options</a></li>
+              </ul>  
+              </p>     
+          </div>
+       </div>
+        <div class="col-sm-4 floatsub" >
+           <video width="110%" height="100%" controls >
+             <source src="images/movie.mp4" type="video/mp4">
+           </video>
+        </div>
+      </div>    
+ <!---------------------------for Books and Supplies-------------------------->
+        <div class="container border-top ">
+           <div class="row containertop">
+              <div class="col-lg-2">
+                  <h5>Books and Supplies</h5>
+                  <a href="#formeal"><button class="fas fa-question btn btn-warning btn-sm" id="questionbooks" ></button></a>
+              </div>
+              
+              <div class="col-lg-10">             
+                   <div class="form-row">
+                    <label class="form-check-label" >
+                        <input type="radio" class="form-check-input" id="estimatedbook" name="books" value="1,000" checked >Estimated cost $1,000 per year
+                    </label>
+                   </div>  
+
+                  <div class="form-row">
+                   <label style="width: 100%;">
+                     <input type="radio" class="form-check-input" name="books" id="selfbook" >Enter Your Own Numbers
+                        <div class="row">
+                            <div class="col-lg-4 "  style="margin-left: -15px;">
+                                  <label>Books</label>
+                                  <input type="text" class="form-control" id="book">
+                            </div>
+                            <div class="col-lg-4 modifyposition" >
+                                  <label>Supplies</label>
+                                  <input type="text" class="form-control" id="supplies">
+                            </div>  
+                            <div class="col-lg-4 text-right initialchoose"  id="forbook">
+                              <h5 style="padding-top: 48px;">Subtotal : $<span id="booksubtotal">0</span></h5>                           
+                            </div> 
+                        </div>  
+                  </label>
+                </div>
+           </div>
+         </div>        
+       </div>
+
+    <div class="floatlayerhidden floatlayer container row" id="booksfloat" >   
+        <div class="col-sm-8 floattext" >
+        <span class="closeicon" href="#" id="booksclose">
+             <i class="fas fa-igloo far fa-times-circle  text-danger" ></i>
+             <span class="helptitle"><strong>Books and Supplies</strong></span>
+        </span>      
+          <div class="col-sm-12 floattext helptext" >      
+            <p class="help">Books and supplies are not charged by the University with the exception of the Intersession term. You are personally responsible for the purchase of books and supplies. You may use your excess financial assistance that is refunded to you to pay for your books and supplies, if available; otherwise, you will need to use your own funds.
+          <br><br>
+            For <strong>Intersession only</strong>, FHSU offers the option of purchasing books and supplies at the FHSU Bookstore with excess financial aid funds using an FHSU Book Voucher. Book vouchers are available to students whose pending federal financial aid is greater than the total charges for both Intersession and Spring. If you qualify and wish to use a book voucher for Intersession, you must select the option in TigerEnroll when finalizing Intersession enrollment. You must be admitted as a degree-seeking student and your Spring FHSU enrollment must be finalized in order to receive a book voucher for Intersession.</p>     
+          </div>
+      </div>
+
+        <div class="col-sm-4 floatsub" >
+           <video  width="110%" height="100%" controls >
+             <source src="images/movie.mp4" type="video/mp4">
+           </video>
+        </div>
+      </div>      
+ <!-------------------------------for Personal Expenses------------------------------------->
+        <div class="container border-top ">
+           <div class="row containertop">
+              <div class="col-lg-2">
+                  <h5>Personal Expenses</h5>
+                  <a href="#forbook"><button class="fas fa-question btn btn-warning btn-sm" id="questionpersonal" ></button></a>
+              </div>
+
+              <div class="col-lg-10">
+                 <div class="form-row">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="personal" id="estimatedpersonal" value="2,554" checked>Estimated minimum $2,554 cost per year
+                      </label>
+                 </div>
+
+               <div class="form-row ">
+                 <label class="form-check-label" style="width: 100%">
+                    <input type="radio" class="form-check-input" name="personal" id="personalitems" >Enter Your Own Numbers
+
+                      <div class="form-row" >
+                          <div class="col-lg-3 "  style="margin-left: -15px;">
+                            <label>Laundry</label>
+                            <input type="text" class="form-control" id="laundry">
+                          </div>
+                          <div class="col-lg-3 modifyposition" >
+                            <label>Medical Care</label>
+                            <input type="text" class="form-control" id="medicalcare">
+                          </div>
+                          <div class="col-lg-3 modifyposition" >
+                            <label>Entertainment</label>
+                            <input type="text" class="form-control" id="entertainment">
+                          </div>
+                      </div>
+
+                      <div class="form-row" >     
+                          <div class="col-lg-2 " id="forclothing" style="margin-left: -15px;">
+                            <label>Clothing</label>
+                            <input type="text" class="form-control" id="clothing">
+                          </div>
+                          <div class="col-lg-3 modifyposition">
+                            <label>Phone Service</label>
+                            <input type="text" class="form-control" id="phoneservice">
+                          </div>
+                          <div class="col-lg-2 modifyposition">
+                            <label>Credit Card</label>
+                            <input type="text" class="form-control" id="creditcard">
+                          </div>
+                           <div class="col-lg-2 modifyposition">
+                            <label>Insurance</label>
+                            <input type="text" class="form-control" id="insurance">
+                          </div>
+                          <div class="col-lg-3 text-right initialchoose"  id="forpersonal">
+                            <h5 style="padding-top: 48px">Subtotal : $<span id="personalsubtotal">0</span></h5>
+                          </div>
+                     </div>
+                  </label>
+                </div>
+            </div>
+           </div>    
+      </div>
+
+     <div class="floatlayerhidden floatlayer container row" id="personalfloat" >   
+        <div class="col-sm-8 floattext" >
+        <span class="closeicon" href="#" id="personalclose">
+             <i class="fas fa-igloo far fa-times-circle  text-danger" ></i>
+             <span class="helptitle"><strong>Personal Expenses</strong></span>
+        </span>      
+          <div class="col-sm-12 floattext helptext" >      
+            <p class="help ">Going to FHSU will cost more than just tuition, fees, books, and supplies.  Each student must have a budget for personal expenses.  This budget item ensures that the student’s needs for items such as shampoo, laundry detergent, entertainment, and clothing are factored into college costs.</p>     
+          </div>
+      </div>
+
+      <div class="col-sm-4 floatsub " >   
+         <video width="110%" height="100%" controls >
+           <source src="images/movie.mp4" type="video/mp4">
+         </video>  
+      </div>
+    </div>   
+ <!------------------------------for Transportation------------------------------>
+        <div class="container border-top">
+           <div class="row containertop">
+              <div class="col-lg-2">
+              		<h5>Transportation</h5>
+                  <a href="#forpersonal">
+                    <button class="fas fa-question btn btn-warning btn-sm" id="questiontransportation" ></button>
+                  </a>
+              </div>
+
+              <div class="col-lg-10"> 	  
+	                    <div class="form-row ">
+		                    <label class="form-check-label">
+		                    	<input type="radio" class="form-check-input" name="transportation" id="leasttransportation" value="1200" val="1,200" checked>Estimated minimum $1,200 per academic year for gas and basic maintenance costs
+		                    </label>
+	              		 </div>
+
+	              		<div class="form-row " style="margin-left: -10px;">
+		                    <label class="form-check-label col-lg-12" >
+		                    <input type="radio" class="form-check-input" name="transportation" id="gasmaintenance">Enter Your Own Numbers for Gas and Basic maintenance 
+			                    <div class="form-row hidden leftfix" id="gasmaintenancediv" style="margin-left: -8px;">                     
+				                      <div class="col-lg-4 personalized" >
+				                        <label>Gas</label>
+				                        <input type="text" class="form-control" id="gas">
+				                      </div>
+				                      <div class="col-lg-4 personalized2">
+				                        <label>Maintenance</label>
+				                        <input type="text" class="form-control" id="carmaintenance">
+				                      </div>		
+			                    </div>
+			                </label>
+		                </div>
+		                
+		                <hr width="65%" style="margin-left: 0px">
+		                <div class="form-row">
+  			               <div class="col-lg-4 " style="margin-left: -3px;">
+  			                        <label>Car Payment</label>
+  			                        <input type="text" class="form-control" id="carpayment" >
+  			               </div>
+  			               <div class="col-lg-4 ">
+  			                        <label>Car Insurance</label>
+  			                        <input type="text" class="form-control" id="carinsurance">
+  			              </div>
+                      <div class="col-lg-4 text-right initialchoose"  id="fortransportation">      
+                        <h5 style="padding-top: 48px">Subtotal : $<span id="transportationsubtotal">0</span></h5>
+                      </div>
+                   </div>
+             </div>
+           </div>          
+           </div>      
+        </div>
+              	
+
+      <div class="floatlayerhidden floatlayer container row" id="transportationfloat" >   
+        <div class="col-sm-8 floattext" >
+        <span class="closeicon" href="#" id="transportationclose">
+             <i class="fas fa-igloo far fa-times-circle  text-danger" ></i>
+             <span class="helptitle"><strong>Transportation</strong></span>
+        </span>      
+        <div class="col-sm-12 floattext helptext" >      
+            <p class="help ">Traveling to FHSU and back home is also an important part of the cost of attendance.  The amount designated for transportation can include costs for operating and maintaining a vehicle which is used to transport the student to and from school, but not to purchase a vehicle.</p>     
+        </div>
+      </div>
+        <div class="col-sm-4 floatsub" >
+           <video width="110%" height="100%"  controls >
+             <source src="images/movie.mp4" type="video/mp4">
+           </video>
+        </div>
+      </div>                 
+<!--------------------------------for Miscellaneous----------------------------------->
+        <div class="container border-top ">
+           <div class="row containertop">
+              <div class="col-lg-2">
+              		 <h5>Miscellaneous</h5>
+                   <a href="#fortransportation"><button class="fas fa-question btn btn-warning btn-sm" id="questionmiscellaneous" ></button></a>
+              </div>
+              <div class="col-lg-10">            
+              	     <div class="form-row">       
+                        <div class="col-lg-2">
+                          <label>Child Care</label>
+                          <input type="text" class="form-control" id="childcare">
+                        </div>
+                        <div class="col-lg-2">
+                           <label>Savings Plans</label>
+                          <input type="text" class="form-control" id="savingsplans">
+                        </div>
+                        <div class="col-lg-3">
+                           <label>Emergency Fund</label>
+                          <input type="text" class="form-control" id="emergencyfund">
+                        </div>
+                        <div class="col-lg-2">
+                           <label>Other</label>
+                          <input type="text" class="form-control" id="other">
+                        </div>
+                        <div class="col-lg-3 text-right initialzero" id="formiscellaneous">
+                            <h5 style="padding-top: 48px">Subtotal : $<span id="miscellaneoussubtotal">0</span></h5>                
+                       </div>
+                     </div>               
+              </div>         
+           </div> 
+          <!--<hr class="text-center" > -->
+        </div>
+          
+      <div class="floatlayerhidden floatlayer container row" id="miscellaneousfloat" >   
+        <div class="col-sm-8 floattext" >
+        <span class="closeicon" href="#" id="miscellaneousclose">
+             <i class="fas fa-igloo far fa-times-circle  text-danger" ></i>
+             <span class="helptitle"><strong>Miscellaneous</strong></span>
+        </span>      
+          <div class="col-sm-12 floattext helptext" >      
+            <p class="help ">Miscellaneous costs that may be factored into the cost of attendance can include the purchase of a personal computer that the student will use for study for the enrollment period, dependent care, a one-time direct cost of obtaining a first professional license or certificate, study abroad programs that are approved for credit, disability expenses, and loan fees.</p>     
+          </div>
+      </div>
+        <div class="col-sm-4 floatsub" >
+           <video width="110%" height="100%"  controls >
+             <source src="images/movie.mp4" type="video/mp4">
+           </video>
+        </div>
+      </div>	  
+<!----------------------------------for Scholarship---------------------------------->
+	<div class="container border-top ">
+			   <div class="row containertop">
+				  <div class="col-lg-2">
+             <h5>Scholarships</h5>
+					   <a href="#forScholarship"><button class="fas fa-question btn btn-warning btn-sm" id="questionScholarship" ></button></a>
+				  </div>
+				  <div class="col-lg-10">            
+						 <div class="form-row" style="margin-bottom: 2px"> 
+               <div class="col-lg-3">
+                  <label>ACT Score</label>
+               </div>
+                <div class="col-lg-6" id="actScoreOptions"> 
+                         <select class="custom-select mr-sm-6" id="actScore" >
+                              <option value="0" name = "actscore" selected>Choose Your ACT Score</option>
+                              <option value="1000" name = "21-22">21 - 22</option>
+                              <option value="1500" name = "23-25">23 - 25</option>
+                              <option value="2000" name = "26-28">26 - 28</option>
+                              <option value="3500" name = "29+"  >29 and up</option>         
+                        </select> 
+                </div> 
+            </div>
+            <div class="form-row" style="margin-bottom: 2px"> 
+              <div class="col-lg-3">
+                  <label>AOA</label>
+              </div>     
+                <div class="col-lg-6" id="aoaScoreOptions">     
+                    <select class="custom-select mr-sm-6" id="aoaScore" >
+                        <option value="0" name = "aoascore" selected>Choose AOA</option>
+                        <option value="500" name = "500" >$500</option>
+                        <option value="900" name = "900" >$900</option>
+                  </select>    
+                </div> 
+            </div>
+            <div class="form-row" style="margin-bottom: 2px"> 
+                <div class="col-lg-3">
+                    <label>Transfer</label>
+                </div>     
+                  <div class="col-lg-6" id="transferOptions">     
+                      <select class="custom-select mr-sm-6" id="transfer" >
+                          <option value="0" name = "transfer" selected>Choose Transfer</option>
+                          <option value="1000" name = "1000" >$1000</option>
+                          <option value="1500" name = "1500" >$1500</option>
+                    </select>    
+                  </div> 
+              </div>
+            <div class="form-row">
+                  <div class="col-lg-3">
+                      <label>Other Scholarships</label>
+                  </div>
+                  <div class="col-lg-6">
+                    <input class="form-control" id="amount" placeholder="$">
+                  </div>
+                  <div class="col-lg-3 text-right initialzero" id="forScholarship">
+                    <h5 style="padding-top: 18px">Subtotal : $<span id="scholarshipsubtotal">0</span></h5>                
+                  </div>
+             </div> 
+            </div>             
+				  </div>         
+			   </div> 
+			  <hr class="text-center" >			  
+		  <div class="floatlayerhidden floatlayer container row" id="scholarshipfloat" >   
+  			<div class="col-sm-8 floattext" >
+    			<span class="closeicon" href="#" id="scholarshipclose">
+    				 <i class="fas fa-igloo far fa-times-circle  text-danger" ></i>
+    				 <span class="helptitle"><strong>Scholarships</strong></span>
+    			</span>      
+    			<div class="col-sm-12 floattext helptext" >      
+    				 <p class="help ">
+               <strong>Eligibility</strong><br>
+                You must meet the requirements listed for each individual scholarship you apply for as well as be a full-time student during the 2019-20 academic year unless otherwise specified. To be considered full-time, undergraduate students must be enrolled in twelve credit hours per semester at FHSU and graduate students in nine credit hours per semester at FHSU. Unless otherwise noted, students must have earned a high school diploma or GED to be eligible for scholarships.
+                <br>
+                <strong>Application</strong><br>
+                Apply now at <a href="https://fhsu.academicworks.com/users/sign_in">https://fhsu.academicworks.com/users/sign_in</a>. The online scholarship application will automatically match and recommend scholarships for which you are eligible, as well as allow you to search for and select scholarship for which you wish to apply. You must be admitted to FHSU by February 11, 2019, in order for your account to be active to apply for 2019-20 scholarships. If you have not applied for admission, complete <a href="https://fhsu.edu/admissions/index.html">this step</a>.
+                <br><br>
+                Additional scholarship opportunities will be posted throughout the scholarship application cycle (September 15, 2018 - February 15, 2019). Be sure to log back into your Scholarship account periodically to view additional opportunities that may be available.</p>     
+    			</div>
+  		  </div>
+
+  			<div class="col-sm-4 floatsub" >
+  			   <video width="110%" height="100%"  controls >
+  				  <source src="images/movie.mp4" type="video/mp4">
+  			   </video>
+  			</div>
+		  </div>
+<!----------------------------------for Total---------------------------------->          
+    <div class="container" >
+           <div class="row" >
+              <div class="col-lg-2" >
+              </div>
+              <div class="col-lg-10 text-right fortotal" >
+                 <h3>Total Cost : $<span id="cost"></span></h3>
+                 <p>(This total cost does not include any scholarships)</p>
+              </div>
+           </div>
+    </div>
+    <div class="container">
+        <p>The Cost of Attendance Calculator takes your enrollment level and other factors into account to populate your college costs as accurately as possible.  These costs are based on 2018-2019 data.  The Net Price Calculator is constructed assuming first-time, full-time enrollment.  After receiving a first Bachelor’s degree, students are no longer eligible for Federal Pell Grants.  Numbers generated using the Net Price Calculator do not replace financial aid awarding.  If you have completed a Free Application for Federal Student Aid at  <a href="https://studentaid.ed.gov/sa/fafsa">fafsa.gov</a>, please log into Tiger Tracks to check on the status of your financial aid. </p>
+        
+     </div> 
+
+<form action="netpricecalculator.php" method="get">
+   <div class="container" >
+      <div class="col-lg-12 " >
+        <input type="text" name="inState" id="inState">
+        <input type="text" name="outOfState" id="outOfState">
+        <input type="text" name="roomAndBoard" id="roomAndBoard" >
+        <input type="text" name="booksubtotal" id="booksAndSupplies">
+        <input type="text" name="others" id="others">
+        <input type="text" name="scholarships" id="scholarships">
+        <input type="submit" class="btn btn-success btn-block topfix" id="continue" value="Start Net Price Calculator">
+      </div> 
+    </div>
+    <hr class="text-center" >
+
+</form>
+<!-------------------  footer--------------------->
+ <div class="container" >
+    <div class="row">
+            <div class="col-sm ">
+                <ul class="list-group list-group-flush text-center ">               
+                    <li class="list-group-item border-0 listfix"> <a href="http://www.fhsu.edu/student-affairs">Student Affairs</a></li>
+                    <li class="list-group-item border-0 listfix"> <a href="https://www.fhsu.edu/student-affairs/students">For Student</a></li>
+                    <li class="list-group-item border-0 listfix"> <a href="https://www.fhsu.edu/student-affairs/Student-Affairs-Offices/">Student Affairs Offices</a></li>
+                    <li class="list-group-item border-0 listfix"> <a href="https://www.fhsu.edu/vp/VP-for-Student-Affairs/">VP for Student Affairs</a></li>
+                    <li class="list-group-item border-0 listfix"> <a href="https://www.fhsu.edu/student-affairs/make-an-impact/">Invest in Students</a></li>
+                 </ul>
+                
+            </div>
+            <div class="col-sm">
+                 <ul class="list-group list-group-flush text-center ">
+                    <li class="list-group-item border-0 listfix"><h5>Financial Assistance Office</h5></li>
+                    <li class="list-group-item border-0 listfix">Tel : (785) 628-4408 </li>
+                    <li class="list-group-item border-0 listfix">Tel : (800) 628-FHSU</li>
+                    <li class="list-group-item border-0 listfix">Fax : (785) 628-4014</li>
+                     <li class="list-group-item border-0 listfix"></li>
+                 </ul>
+            </div>
+            <div class="col-sm">
+                 <ul class="list-group list-group-flush text-center">
+                    <li class="list-group-item border-0 listfix"><h5>Address</h5></li>
+                    <li class="list-group-item border-0 listfix">Picken Hall 202</li>
+                    <li class="list-group-item border-0 listfix">600 Park Street</li>
+                    <li class="list-group-item border-0 listfix">Hays, KS 67601</li>
+                     <li class="list-group-item border-0 listfix"></li>
+                 </ul>
+            </div>
+     </div>
+
+     <div class="row">
+       <hr class="text-center" >
+     </div>
+  </div> 
+
+    <script src="http://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+      $("#inState").hide();
+      $("#outOfState").hide();
+      $("#roomAndBoard").hide();
+      $("#booksAndSupplies").hide();
+      $("#others").hide();
+      $("#scholarships").hide();
+
+      $(document).on('click', '#continue', function(){
+           
+        var inStateTotal = getinState();
+        $("#inState").attr("value",inStateTotal);
+
+        var outOfStateTotal = getoutState();  
+        $("#outOfState").attr("value",outOfStateTotal); 
+
+        var roomAndBoard = Number($('#housingsubtotal').html().replace(/,/g,"")) + Number($('#mealsubtotal').html().replace(/,/g,""));
+        $("#roomAndBoard").attr("value",roomAndBoard);
+
+        var book = Number($('#booksubtotal').html().replace(/,/g,""));
+        $("#booksAndSupplies").attr("value",book);
+
+        var other = Number($('#personalsubtotal').html().replace(/,/g,"")) +Number($('#transportationsubtotal').html().replace(/,/g,"")) + Number($('#miscellaneoussubtotal').html().replace(/,/g,""));
+        $("#others").attr("value",other);
+
+        var scholarshipTotal = Number($('#scholarshipsubtotal').html().replace(/,/g,''));
+        $("#scholarships").attr("value",scholarshipTotal);
+        //console.log(scholarshipTotal);
+    });
+    </script>
+
+  </body>
+</html>
+    
